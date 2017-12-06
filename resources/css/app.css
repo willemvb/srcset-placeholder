@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+@import "./bootstrap.css";
+
+body {
+    margin: 4em;
+    font-family: IBM Plex Sans, sans-serif;
+}
+
+h1 {
+    margin: 2rem 0 .5rem;
+    font-size: 1.5rem;
+}
+
+li {
+    &:before {
+        float: left;
+        overflow: hidden;
+        padding-right: .5rem;
+        content: '-';
+    }
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    & a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 .25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 999px;
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+xmp {
+    color: #999;
+    font-family: IBM Plex Mono, monospace;
+}
+
+.images {
+    display: flex;
+    align-items: flex-start;
+}
+
+.img-33 {
+    width: 33%;
+}
+
+.img-50 {
+    width: 50%;
+}
+
+.img-66 {
+    width: 66%;
+}
+
+.img-responsive {
+    height: 0;
+    background-size: cover;
+    background-position: center;
+
+    & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.link {
+    text-decoration: underline;
+}

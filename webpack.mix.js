@@ -1,13 +1,11 @@
 const mix = require('laravel-mix');
 
-mix.config.uglify.compress.drop_console = false;
 mix.config.postCss = require('./postcss.config').plugins;
 
 mix
-    .version()
-
-    .js('assets/js/app.js', 'build/js')
-    .postCss('assets/css/app.css', 'build/css')
+    .js('resources/js/app.js', 'examples/assets/app.js')
+    .js('resources/js/app-lazy.js', 'examples/assets/app-lazy.js')
+    .postCss('resources/css/app.css', 'examples/assets/app.css')
     .options({
         processCssUrls: false,
     });
