@@ -1,0 +1,12 @@
+.logo-svg {
+    width: auto;
+    height: 100%;
+}
+
+.logo-background {
+    fill: config('colors.blue');
+}
+
+.logo-letter {
+    fill: config('colors.white');
+}

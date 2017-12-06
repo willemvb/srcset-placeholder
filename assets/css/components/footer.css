@@ -1,0 +1,20 @@
+.footer {
+    @apply .flex-none;
+    @apply .bg-blue-lightest;
+    @apply .py-4;
+    @apply .leading-loose;
+    @apply .text-blue;
+
+    @screen md {
+        @apply .leading-normal;
+    }
+
+    & a {
+        @apply .inline-block;
+        @apply .trans-opacity-fast; 
+
+        &:hover {
+            @apply .text-blue-dark;
+        }
+    }
+}
